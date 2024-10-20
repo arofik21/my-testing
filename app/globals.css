@@ -1,27 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.title-section {
+  @apply text-[45px] leading-[67px];
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+p {
+  @apply mb-5 text-[16px] lg:text-[18px];
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+p:last-of-type {
+  @apply mb-0;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.list-about-us li {
+  @apply mb-4 text-[16px] lg:text-[18px];
+}
+.list-about-us li:last-child {
+  @apply mb-0;
 }
